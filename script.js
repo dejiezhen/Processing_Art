@@ -22,21 +22,22 @@ let bubbles = []
 let acceleration = 1
 let noise
 let paused
+let canvas 
 
 const fascinationColors = {
 	0: ["rgb(0,100,0)", "Green.mp3"],
 	1: ["rgb(255,255,255)", "White.mp3"],
 	2: ["rgb(255,105,180)", "Pink.mp3"],
 	3: ["rgb(139,69,19)", "Brown.mp3"],
-	4: ["rgb(0,0,0)", undefined]
+	4: ["rgb(0,0,1)", undefined]
 }
 
 const bubbleColors = {
-		0: "rgba(144,238,144,.85)",
-		1: "rgba(245,245,245,.85)",
-		2: "rgba(255,182,193,.85)",
-		3: "rgba(160,82,45,.85)", 
-		4: "rgba(255,255,255,.85)"
+	0: "rgba(144,238,144,.85)",
+	1: "rgba(245,245,245,.85)",
+	2: "rgba(255,182,193,.85)",
+	3: "rgba(160,82,45,.85)", 
+	4: "rgba(255,255,255,.85)"
 }
 
 let mousePos = {
@@ -52,8 +53,10 @@ function preload() {
 		none
 	*/
 	soundFormats('mp3')
-	let sound = fascinationColors[currFascination][1]
-  	noise = loadSound(sound)
+	let sound = fascinationColors[currFascination][1] || null
+	if(sound) {
+		noise = loadSound(sound)
+	}
 	righteous = loadFont('Righteous-Regular.ttf')
 }
 
@@ -74,7 +77,7 @@ function setup() {
 	Args: 
 		none
 	*/
-	createCanvas(window.innerWidth, window.innerHeight)
+	canvas = createCanvas(window.innerWidth, window.innerHeight)
 	paused = false
 	if (currFascination > 4) {
 		currFascination = 0
@@ -175,8 +178,10 @@ function mousePressed() {
 	if (currFascination > 4) {
 		currFascination = 0
 	}
-	let sound = fascinationColors[currFascination][1]
-	noise = loadSound(sound, loadSuccess)
+	let sound = fascinationColors[currFascination][1] || null
+	if (sound) {
+		noise = loadSound(sound, loadSuccess)
+	}
 }
 
 function distanceFormula(i, j) {
@@ -234,6 +239,7 @@ function keyPressed() {
 	Up for acceleration, down for deceleration,
 	P for pausing the screen. Press any key
 	to unpause
+	S for screenshot
 	
 	Args: 
 		none
@@ -254,9 +260,9 @@ function keyPressed() {
 	}
 	// "S" == 83
 	if (keyCode === 83) {
-		saveCanvas("SoftFascination", "jpg")
+		console.log('hit')
+		save(canvas, 'SoftFascination.jpg')
 	}
-	
 }
 
 function textFill() {
