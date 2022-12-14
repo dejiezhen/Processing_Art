@@ -244,12 +244,17 @@ function keyPressed() {
 	if (keyCode === DOWN_ARROW) {
 		acceleration-=0.35
 	}
+	// "P" == 80
 	if (keyCode === 80) {
 		paused = true
 		noise.pause()
 	} else {
 		paused = false
 		noise.loop()
+	}
+	// "S" == 83
+	if (keyCode === 83) {
+		saveCanvas("SoftFascination", "jpg")
 	}
 	
 }
