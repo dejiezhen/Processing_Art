@@ -5,11 +5,11 @@ This project is based on the idea of soft fascination. Soft fascination is an ef
 
 **Here are the benefits of each noise:**
 
-White Noise: concentration for working and studying
-Green Noise: calming effects for relaxation
-Pink Noise: better sleep
-Black Noise: silence, total concentration
-Brown Noise: relaxation, improved focus, better sleep
+- White Noise: concentration for working and studying
+- Green Noise: calming effects for relaxation
+- Pink Noise: better sleep
+- Black Noise: silence, total concentration
+- Brown Noise: relaxation, improved focus, better sleep
 
 ## Reflection
 
