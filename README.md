@@ -11,6 +11,12 @@ This project is based on the idea of soft fascination. Soft fascination is an ef
 - Black Noise: silence, total concentration
 - Brown Noise: relaxation, improved focus, better sleep
 
+## Features
+UP arrow key === bubble acceleration
+DOWN arrow key === bubble deceleartion 
+P key === pause screen for screenshot
+Left mouse click === change noise
+
 ## Reflection
 
 I initially learned about this concept of soft fascination in my cognitive architecture class. Since learning about soft fascination, I've been interested in learning about different ways to reduce my mental fatigue. I remember reading about color noises in the past and I thought the concepts were interesting. This project idea came into fruition because I was mentally drained during finals week. I wanted to create something that would help other students and myself through these difficult weeks. For this project, I incorporated ideas of soft fascination and color noises that people can use for different purposes. People could leave the website on the screen and select which noise they want to listen to. The bubble art that generates is relaxing and mesmerizing (hopefully not too distracting)!
