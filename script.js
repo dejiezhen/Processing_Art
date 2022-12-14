@@ -260,7 +260,6 @@ function keyPressed() {
 	}
 	// "S" == 83
 	if (keyCode === 83) {
-		console.log('hit')
 		save(canvas, 'SoftFascination.jpg')
 	}
 }
