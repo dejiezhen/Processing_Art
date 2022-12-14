@@ -273,7 +273,8 @@ function textFill() {
 		textFont(righteous)
 		text("Left Click to Change Noise", windowWidth - 200, windowHeight - 125)
 		text("Pause with P", windowWidth - 200, windowHeight - 100)
-		text("Accelerate ^ Decelerate v", windowWidth - 200, windowHeight - 75)
+		text("Screenshot with S", windowWidth - 200, windowHeight - 75)
+		text("Accelerate ^ Decelerate v", windowWidth - 200, windowHeight - 50)
 	}
 }
 
