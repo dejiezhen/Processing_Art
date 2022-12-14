@@ -12,10 +12,10 @@ This project is based on the idea of soft fascination. Soft fascination is an ef
 - Brown Noise: relaxation, improved focus, better sleep
 
 ## Features
-UP arrow key === bubble acceleration
-DOWN arrow key === bubble deceleartion 
-P key === pause screen for screenshot
-Left mouse click === change noise
+- UP arrow key === bubble acceleration
+- DOWN arrow key === bubble deceleartion 
+- P key === pause screen for screenshot
+- Left mouse click === change noise
 
 ## Reflection
 
