@@ -19,6 +19,7 @@ This project is based on the idea of soft fascination. Soft fascination is an ef
 - P key === pause screen for screenshot
 - Left mouse click === change noise
 - AFK === bubbles free roam
+- Any key if paused === unpause screen
 
 ## Reflection
 
